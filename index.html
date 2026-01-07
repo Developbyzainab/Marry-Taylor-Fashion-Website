@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans">
+  <!-- Top Bar -->
+  <div class="w-full border-b">
+    <div class=" w-full h-auto flex justify-between items-center py-2 px-4">
+      <!-- Left Icons -->
+      <div class="flex items-center gap-4 text-lg max-sm:hidden">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+
+      <!-- Logo Center -->
+      <div><img src="./img/logo.svg" alt=""></div>
+
+      <!-- <div class="min-lg:hidden max-sm:flex justify-center">
+        <i class="fa-solid fa-bars"></i>
+      </div> -->
+
+      <!-- Hamburger (Mobile) -->
+    <div class="sm:hidden flex items-center">
+      <button id="menu-toggle" class="text-xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+
+
+      <!-- Right Icons -->
+      <div class="flex items-center gap-5 text-lg max-sm:hidden">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><img src="./img/icon.svg" alt=""></a>
+        <span class="text-sm">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Nav -->
+  <nav class="w-full bg-white shadow-sm max-sm:flex-wrap">
+    <div class="flex justify-center gap-6 py-3 px-4 text-sm font-semibold uppercase max-sm:hidden">
+      <a href="#"
+        class="relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:scale-x-100 after:origin-left after:transition-transform hover:after:scale-x-100">Home</a>
+      <a href="#"
+        class="relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">My
+        Story</a>
+      <a href="#"
+        class="relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">Courses</a>
+      <a href="#"
+        class="relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">Upcoming
+        Events</a>
+      <a href="#"
+        class="relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">Podcasts</a>
+      <a href="#"
+        class="relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">Blog</a>
+      <a href="#"
+        class="relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">Contact</a>
+      <a href="#"
+        class="relative pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100">All
+        Pages</a>
+    </div>
+  </nav>
+
+
+
+
+   <!-- Mobile Menu -->
+   <div id="mobile-menu" class="sm:hidden flex hidden  flex-col px-4 py-3 items-start gap-3 text-sm font-semibold uppercase">
+    <a href="#" class="hover:text-indigo-600 transition">Home</a>
+    <a href="#" class="hover:text-indigo-600 transition">My Story</a>
+    <a href="#" class="hover:text-indigo-600 transition">Courses</a>
+    <a href="#" class="hover:text-indigo-600 transition">Upcoming Events</a>
+    <a href="#" class="hover:text-indigo-600 transition">Podcasts</a>
+    <a href="#" class="hover:text-indigo-600 transition">Blog</a>
+    <a href="#" class="hover:text-indigo-600 transition">Contact</a>
+    <a href="#" class="hover:text-indigo-600 transition">All Pages</a>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-[40rem] flex items-center justify-center bg-cover bg-center"
+    style="background-image: url(./img/header.jpg);">
+
+    <div class="relative z-10 text-center text-white  px-4">
+      <h4 class="text-[20px] mb-2">Fashion Business</h4>
+      <h1 class="text-[63px] font-semibold leading-tight mb-5">
+        Online Education from <br /> Fashion Industry Leaders
+      </h1>
+      <p class="text-[18px] mb-7">
+        Discover the business of fashion and the cultural impact of the <br> fashion industry with courses from industry
+        leaders.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#" class="bg-white text-black font-medium px-6 py-3 rounded hover:bg-black hover:text-white">Get Free
+          Lesson</a>
+        <a href="#"
+          class="border border-white text-white font-medium px-6 py-3 rounded hover:bg-white hover:text-black transition">View
+          Courses</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- about me -->
+  <section class="bg-[#f6f0e8] py-20">
+    <div class="w-full h-auto px-15 grid md:grid-cols-2 gap-60  items-center">
+      <!-- Text Content -->
+      <div>
+        <h4 class="uppercase font-semibold text-sm mb-5">Meet Me</h4>
+        <h2 class="text-5xl font-serif font-semibold mb-8">About Me</h2>
+        <p class="text-[18px] leading-relaxed text-gray-800 mb-12">
+          Hi dear! My name is Mary and I am experienced fashion designer and stylist. Behind the creative flair of the
+          fashion industry is the business acumen needed to keep a company running. In addition to learning the creative
+          side of the field, students should also familiarize themselves with what goes on behind the scene — such as
+          finance and marketing.
+        </p>
+        <a href="#"
+          class="bg-black text-white px-10 py-4 font-semibold text-sm uppercase tracking-wide hover:bg-gray-800 transition">Read
+          More</a>
+      </div>
+
+      <!-- Image Content -->
+      <div class="relative">
+        <!-- Main Image -->
+        <img src="./img/about (2).jpg" class="w-110 h-140" alt="Main">
+
+        <!-- Overlapping Image -->
+        <img src="./img/about (1).jpg" alt="Overlay" class="absolute bottom-[180px] left-[-150px] " />
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- cards -->
+
+  <section class=" w-full h-80 justify-around flex items-center text-center max-sm:flex-wrap max-sm:h-250">
+    <div class=" w-65 h-65">
+      <img src="./img/calendar.svg" class="pl-27 pt-13" alt="">
+      <h1 class="text-[20px] font-semibold pt-4 ">25+ Fashion Courses</h1>
+      <p class="text-[17px] text-gray-800 pt-2">Fashion Business courses for all levels from industry leaders.</p>
+    </div>
+
+    <div class=" w-65 h-65">
+      <img src="./img/coffee-1.svg" class="pl-27 pt-13" alt="">
+      <h1 class="text-[20px] font-semibold pt-4 ">Personal Stylists</h1>
+      <p class="text-[17px] text-gray-800 pt-2">I will give you fashion inspiration to create looks that work.</p>
+    </div>
+
+    <div class=" w-65 h-65">
+      <img src="./img/heart-2.svg" class="pl-27 pt-13" alt="">
+      <h1 class="text-[20px] font-semibold pt-4 ">Wardrobe Analysis</h1>
+      <p class="text-[17px] text-gray-800 pt-2">This service will leave you with an edited, clean and organized
+        wardrobe.</p>
+
+    </div>
+
+    <div class=" w-65 h-65">
+      <img src="./img/gift-2.svg" class="pl-27 pt-13" alt="">
+      <h1 class="text-[20px] font-semibold pt-4 ">Personal Shopping</h1>
+      <p class="text-[17px] text-gray-800 pt-2">I will shop with you and help you on your way to looking fabulous.</p>
+
+    </div>
+  </section>
+
+
+  <!-- pricing -->
+
+  <section class="bg-[#f6f0e8] w-full h-auto  text-center items-center justify-center">
+    <div>
+      <h1 class="text-[17px] font-medium pt-25">CHOOSE ONE OF OUR</h1>
+      <h1 class="text-6xl font-serif pt-5">Pricing Plans</h1>
+      <img src="./img/lines55.svg" class="ml-210 mt-[-80px] max-md:hidden" alt="">
+      <img src="./img/shine55.svg" class="mt-[-90px] ml-20" alt="">
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto pt-20">
+      <!-- Card 1 -->
+      <div class="bg-white border-2 border-black p-8 flex flex-col justify-between h-130 max-sm:w-80">
+        <div>
+          <h3 class="text-xl font-serif font-semibold mb-8 mt-5">Personal Shopping</h3>
+          <ul class="text-left space-y-4 mb-8">
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 3 hours booked with our
+              stylist
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 5+ shops can be visited
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 10+ fabulous looks
+              created
+            </li>
+            <li class="flex items-start gap-3 mb-5">
+              <span><i class="fa-solid fa-xmark bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> wardrobe analysis
+            </li>
+          </ul>
+          <p class="text-xl font-bold mb-4">$199</p>
+        </div>
+        <button class="bg-black text-white py-4 w-full hover:bg-gray-900 cursor-pointer">BUY NOW</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white border-2 border-black p-8 flex flex-col justify-between max-sm:w-80">
+        <div>
+          <h3 class="text-xl font-serif font-semibold mb-6 mt-5">Personal Stylists</h3>
+          <ul class="text-left space-y-4 mb-8">
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> one month of
+              appointments 1:1
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 3 hours shopping with
+              our stylist
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 2 wardrobe analysis
+              sessions
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 30+ fabulous looks
+              created
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> capsule wardrobe
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> fashion course
+              ‘Beginner’ included
+            </li>
+          </ul>
+          <p class="text-xl font-bold mb-4">$399</p>
+        </div>
+        <button class="bg-black text-white py-4 w-full hover:bg-gray-900 cursor-pointer">BUY NOW</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white border-2 border-black p-8 flex flex-col justify-between h-130 max-sm:w-80">
+        <div>
+          <h3 class="text-xl font-serif font-semibold mb-6 mt-5">Wardrobe Analysis</h3>
+          <ul class="text-left space-y-4 mb-8">
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 5 wardrobe analysis
+              sessions
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 10+ fabulous looks
+              created
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> capsule wardrobe
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-check bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> 1:1 stylists session
+            </li>
+            <li class="flex items-start gap-2 mb-5">
+              <span><i class="fa-solid fa-xmark bg-[#f6f0e8] px-2 py-2 rounded-full"></i></span> fashion course
+              ‘Beginner’ included
+            </li>
+          </ul>
+          <p class="text-xl font-bold mb-4">$299</p>
+        </div>
+        <button class="bg-black text-white py-4 w-full hover:bg-gray-900 cursor-pointer">BUY NOW</button>
+      </div>
+    </div>
+
+  </section>
+
+
+
+<!-- marry courses -->
+
+
+  <section class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Heading -->
+      <div class="text-center mb-12">
+        <h1 class="text-[17px] font-medium pt-25">MOST LOVED</h1>
+        <h1 class="text-6xl font-serif pt-5">Mary’s Courses</h1>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card 1 -->
+        <div>
+          <div class="relative">
+            <img class="w-full h-85 object-cover" src="./img/courses (3).jpg" alt="">
+            <div class="absolute top-2 left-30 bg-[#e9dad2] text-black text-sm font-semibold px-3 py-2">
+              <span class="line-through text-black mr-1">$200.00</span>$100.00
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-3 pt-5">Financial Independence: 10 <br> Steps</h3>
+            <div class="flex items-center text-black text-md space-x-4">
+              <div class="flex items-center">
+                <h1><i class="fa-regular fa-clock"></i> 20 weeks</h1>
+              </div>
+              <div class="flex items-center">
+                <h1><i class="fa-solid fa-signal"></i> All Levels</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div>
+          <div class="relative">
+            <img class="w-full h-85 object-cover" src="./img/courses (2).jpg" alt="Yoga and Pilates">
+            <div class="absolute top-2 left-40 bg-[#e9dad2] text-black text-sm font-semibold px-3 py-2">
+              $20.00
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-3 pt-5">Yoga and Pilates Course for <br> Any Level</h3>
+            <div class="flex items-center text-black text-md space-x-4">
+              <div class="flex items-center">
+                <h1><i class="fa-regular fa-clock"></i> 1 weeks</h1>
+              </div>
+              <div class="flex items-center">
+                <h1><i class="fa-solid fa-signal"></i> All Levels</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div>
+          <div class="relative">
+            <img class="w-full h-85 object-cover" src="./img/courses (4).jpg" alt="Healthy Diet">
+            <div class="absolute top-2 left-40 bg-[#e9dad2] text-black text-sm font-semibold px-3 py-2">
+              $160.00
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-3 pt-5">Healthy Diet, Healthy Skin <br> and Wellbeing</h3>
+            <div class="flex items-center text-black text-md space-x-4">
+              <div class="flex items-center">
+                <h1><i class="fa-regular fa-clock"></i> 1 weeks</h1>
+              </div>
+              <div class="flex items-center">
+                <h1><i class="fa-solid fa-signal"></i> All Levels</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div>
+          <div class="relative">
+            <img class="w-full h-85 object-cover" src="./img/courses (1).jpg" alt="">
+            <div class="absolute top-2 left-50 bg-[#e9dad2] text-black text-sm font-semibold px-3 py-2">
+              FREE
+            </div>
+          </div>
+          <div>
+            <h3 class="text-[20px] font-semibold mb-3 pt-5">Work-Life Balance and <br> Mental Health</h3>
+            <div class="flex items-center text-black text-md space-x-4">
+              <div class="flex items-center">
+              <h1><i class="fa-regular fa-clock"></i> 4 weeks</h1>
+              </div>
+              <div class="flex items-center">
+               <h1><i class="fa-solid fa-signal"></i> All Levels</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View All Button -->
+      <div class="text-center mt-20">
+        <button class="bg-black text-white px-12 py-4 hover:bg-gray-800 cursor-pointer">VIEW ALL</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- clients -->
+
+  <section class="bg-[#f5f0ea] py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <img src="./img/hearts55 (1).svg" class="ml-40" alt="">
+    <p class="text-md font-semibold  text-black  mb-5 ml-10">4000+ Happy Clients</p>
+    <h2 class="text-6xl font-serif mb-12 ml-10">What my Clients Say</h2>
+
+    <div class="grid md:grid-cols-3 gap-5 m-9">
+      <!-- Testimonial 1 -->
+      <div class="border-2 px-8 bg-white text-center w-90 h-95 max-sm:w-70">
+        <div class="text-black mt-10">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p class="text-black text-[18px] mt-7">"Mary is just magical person who is there for your 24h a day. I finished 3 courses Shopping plan  and worked with her 1:1. Thanks to Mary I started my career as a fashion stylist."</p>
+        <p class="font-semibold text-black mt-7">- HELEN WHISTLE</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="border-2 px-8 bg-white text-center w-90 h-95 max-sm:w-70">
+        <div class="text-black mt-10">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p class="text-black text-[18px] mt-7">"Thanks to the Personal Shopping plan I became more confident and happy with my wardrobe. I now have my capsule wardrobe and spend much less on clothing. Thank you, Mary!"</p>
+        <p class="font-semibold text-black mt-7">- EMMA STONE</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="border-2 px-8 bg-white text-center w-90 h-95 max-sm:w-70">
+        <div class="text-black mt-10">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p class=" text-black text-[18px] mt-7">"I have a degree in Marketing but always wanted to work Shopping plan I  in the fashion industry. Thanks to Mary and her team I am now started my career as a PR manager in fashion."</p>
+        <p class="font-semibold text-black mt-7">- MIA STACEY</p>
+      </div>
+    </div>
+
+
+
+    <!-- Brand Logos -->
+    <div class="flex justify-center flex-wrap gap-27 mt-20">
+      <img src="./img/Vogue (1).svg" alt="" class="h-6">
+      <img src="./img/Elle.svg" alt="" class="h-6">
+      <img src="./img/vanity.svg" alt="" class="h-6">
+      <img src="./img/Bazzar.svg" alt="" class="h-6">
+      <img src="./img/Marie-claire.svg" alt="" class="h-6">
+    </div>
+  </div>
+</section>
+
+
+<!-- percentage cards -->
+
+
+<div class="w-full h-60 justify-around flex items-center text-center max-sm:flex-wrap max-sm:h-200">
+  <div>
+    <img src="./img/leftshine.svg" class="mt-[-90px]" alt="">
+  </div>
+  <div class="w-50 h-50 items-center">
+    <h1 class="text-[28px] font-semibold pt-14 ">+65%</h1>
+    <p class="text-[15px] text-black pt-4">PRODUCTIVITY</p>
+  </div>
+
+  <div class="w-50 h-50">
+    <h1 class="text-[28px] font-semibold pt-14 ">790+</h1>
+    <p class="text-[15px] text-black pt-4">5-STAR REVIEWS</p>
+  </div>
+
+  <div class="w-50 h-50">
+    <h1 class="text-[28px] font-semibold pt-14 ">+54%</h1>
+    <p class="text-[15px] text-black pt-4">ENGAGEMENT</p>
+
+  </div>
+
+  <div class="w-50 h-50">
+    <h1 class="text-[28px] font-semibold pt-14 ">x2</h1>
+    <p class="text-[15px] text-black pt-4">INCOME OVER THE YEAR</p>
+  </div>
+
+  <div>
+    <img src="./img/rightshine.svg" class="mt-30" alt="">
+  </div>
+</div>
+
+
+<!-- contact us -->
+
+<section class="bg-[#e1d7cb] py-20 ">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-start justify-evenly">
+    <!-- Left: Contact Info & Form -->
+    <div class="w-130 max-sm:w-90">
+      <img src="./img/fly55.svg" class="ml-100 max-md:hidden" alt="">
+      <p class="text-sm font-semibold mb-2">STAY IN TOUCH WITH ME</p>
+      <h2 class="text-6xl font-serif  mb-6 mt-6">Contact Me</h2>
+      <p class="text-lg mb-8 leading-relaxed max-sm:w-[10rem]">
+        Get instant access to my new fashion courses and be up-to-date with our latest news.
+      </p>
+      <form class="space-y-4">
+        <div class="flex flex-col sm:flex-row gap-4 max-sm:w-[20rem]">
+          <input type="text" placeholder="First Name*" class="border-2 border-black px-4 py-3 w-full" required>
+          <input type="text" placeholder="Last Name*" class="border-2 border-black px-4 py-3 w-full" required>
+        </div>
+        <input type="email" placeholder="Email*" class="border-2 border-black px-4 py-3 w-full max-sm:w-[20rem]" required>
+        <textarea rows="5" placeholder="Message*" class="border-2 border-black px-4 py-3 w-full resize-none max-sm:w-[20rem]" required></textarea>
+        <button type="submit" class="bg-[#00332b] text-white px-10 py-4 font-bold text-sm mt-2 ml-80 hover:bg-gray-900 cursor-pointer max-sm:ml-[-90px]">
+          SEND
+        </button>
+        
+      </form>
+    </div>
+
+    <!-- Right: Image -->
+    <div>
+      <img src="./img/contact.jpg" alt="Contact" class="w-115">
+    </div>
+  </div>
+  <img src="./img/flyleft55 (1).svg" alt="">
+</section>
+
+
+<!-- lets connect -->
+
+<section class="w-full h-auto bg-[#f4eee7] text-center flex flex-col justify-center space-y-7 py-5">
+  <div class="pt-20">
+  <h1 class="text-md font-semibold  text-black  mb-5 ml-10">LET'S CONNECT</h1>
+  <h1 class="text-6xl font-serif mb-12 ml-10 max-sm:text-2xl">Say Hi and Follow Me @firstsight.design</h1>
+</div>
+  <div class="w-full h-auto flex justify-around space-y-6 flex-wrap">
+    <div class="w-[14rem] h-[14rem] bg-white">
+      <img src="./img/connect (5).jpg" alt="">
+    </div>
+    <div class="w-[14rem] h-[14rem] bg-white">
+      <img src="./img/connect (3).jpg" alt="">
+    </div>
+    <div class="w-[14rem] h-[14rem] bg-white">
+      <img src="./img/connect (2).jpg" alt="">
+    </div>
+    <div class="w-[14rem] h-[14rem] bg-white">
+      <img src="./img/connect (4).jpg" alt="">
+    </div>
+    <div class="w-[14rem] h-[14rem] bg-white">
+      <img src="./img/connect (1).jpg" alt="">
+    </div>
+   
+    <button type="submit" class="bg-black text-white px-10 py-4 font-bold text-sm mt-15 items-center hover:bg-gray-900 cursor-pointer">
+     FOLLOW ME @FIRSTSIGHT>DESIGN
+    </button>
+  </div>
+</section>
+
+
+<!-- footer -->
+ <footer class="w-full h-auto text-white bg-black  pt-5">
+  <div class="w-full h-auto text-white flex  justify-evenly space-y-7 max-sm:flex-wrap ">
+  <div class="w-[15rem] h-[20rem]  pl-10 pt-10 ">
+    <img src="./img/footer-logo.svg"  alt="">
+  </div>
+  <div class="w-[15rem] h-[20rem]  pl-20 leading-10 pt-10">
+    <h1>MY STORY</h1>
+    <h1>COURSES</h1>
+    <h1>EVENTS</h1>
+    <h1>BLOG</h1>
+  </div>
+  <div class="w-[15rem] h-[20rem]  pl-20 leading-10 pt-10">
+    <h1>PODCASTS</h1>
+    <h1>CONTACT</h1>
+    <h1>FAQ</h1>
+    <h1>T&C</h1>
+  </div>
+  <div class="w-[19rem] h-[20rem]">
+    <h1 class="text-2xl font-serif pt-10">Subscribe to my Newsletter</h1>
+    <h1 class="pt-3">Subscribe now and thank me later</h1>
+    <div class="flex gap-7 pt-3">
+    <button class="bg-black text-white border-2 border-white px-5 py-3">you@example.co</button>
+    <button class="bg-black text-white border-2 border-white px-6 py-2 cursor-pointer">I'M IN</button>
+  </div>
+  </div>
+</div>
+ </footer>
+
+ <div class="w-full auto py-10 text-white text-center bg-black border-t-1 border-white">
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-twitter ml-2"></i>
+  <i class="fa-brands fa-facebook ml-2"></i>
+  <i class="fa-brands fa-tiktok ml-2"></i>
+  <i class="fa-brands fa-pinterest ml-2"></i>
+  <h3 class="mt-6">© 2025 Copyright message goes here. All Rights Reserved.</h3>
+ </div>
+
+
+
+
+ <!-- Toggle Script -->
+<script>
+  const menuBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+
+</html>
